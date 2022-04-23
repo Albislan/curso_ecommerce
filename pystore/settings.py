@@ -40,10 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'widget_tweaks',
+    'crispy_forms',
+    'localflavor',
     'users',
     'pages',
     'products',
     'cart',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +155,5 @@ INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 
 CART_SESSION_ID = "cart"
 CART_ITEM_MAX_QUANTITY = 20
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
